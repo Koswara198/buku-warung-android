@@ -1,0 +1,9 @@
+{
+  "appId": "com.zeevolker.bukuwarung",
+  "appName": "Buku Warung",
+  "webDir": "dist",
+  "backgroundColor": "#fafaf8",
+  "server": {
+    "androidScheme": "https"
+  }
+}

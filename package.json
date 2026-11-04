@@ -1,0 +1,28 @@
+{
+  "name": "buku-warung",
+  "private": true,
+  "version": "3.0.0",
+  "description": "Pembukuan sederhana untuk warung: jual, uang keluar, stok, dan utang pelanggan. Offline-first dengan sinkron ke Supabase.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test",
+    "build:android": "vite build --mode android --base=./ && cap sync android",
+    "android:apk": "npm run build:android && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.6.0",
+    "vite": "^6.3.0"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}
